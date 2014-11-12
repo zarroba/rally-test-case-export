@@ -1,11 +1,12 @@
 {
   "name": "rally-test-case-export",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generate a test case stubs from a rally test case",
   "repository" : {
     "type" : "git"
   , "url" : "https://github.com/zarroba/rally-test-case-export.git"
   },
+  "issues": "https://github.com/zarroba/rally-test-case-export/issues",
   "bin": {
     "rally-tc-export": "./bin/app.js"
   },
