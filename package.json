@@ -1,6 +1,6 @@
 {
   "name": "rally-test-case-export",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Generate a test case stubs from a rally test case",
   "repository" : {
     "type" : "git"
