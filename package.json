@@ -1,0 +1,21 @@
+{
+  "name": "rally-test-case-export",
+  "version": "1.0.0",
+  "description": "Generate a test case stubs from a rally test case",
+  "repository" : {
+    "type" : "git"
+  , "url" : "https://github.com/zarroba/rally-test-case-export.git"
+  },
+  "bin": {
+    "rally-tc-export": "./bin/app.js"
+  },
+  "dependencies": {
+    "rally": "0.1.4",
+    "copy-paste": "1.0.1"
+  },
+  "keywords": [
+    "rally",
+    "protractor"
+  ],
+  "author": "Pedro Tavares <zarroba@gmail.com>"
+}
