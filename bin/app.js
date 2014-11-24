@@ -24,7 +24,7 @@ if (process.argv[0] === 'node') {
 else if (process.argv[0] === 'rally-tc-export') {
     if (process.argv.length !== 3) {
         console.log('The correct usage for rally test case export should be:')
-        console.log('\tnode bin/app.js `test-case-id` [clipboard|console]')
+        console.log('\rally-tc-export `test-case-id` [clipboard|console]')
         return;
     }
     tcRef = process.argv[1];
