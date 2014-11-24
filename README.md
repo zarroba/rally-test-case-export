@@ -12,9 +12,10 @@ Just install it globally with npm:
 
 ## Usage
 
-First you have to create an account.conf.js file with your account details. Just check the directory where npm installed rally-test-case-export (`/usr/local/lib/node_modules/rally-test-case-export/`, probably) go to the conf dir, copy account.conf.reference.js and set up your rally account.
+First you have to create an account.conf.js file with your account details. Just check the directory where npm installed rally-test-case-export (`/usr/local/lib/node_modules/rally-test-case-export/`, probably) go to the conf dir, copy `account.conf.reference.js` and set up your rally account.
 
 You just have to run `rally-tc-export <testcaseid> [console|clipboard]`
 
 Please note that the test case id is actually not the formatted id (ex: TC34553) but the id you can see on the link (ex: https://rallyurl/#/12334566/detail/testcase/*5433334*)
 At the moment you can chose if you want the output to be sent to the console or copied to the clipboard.
+
