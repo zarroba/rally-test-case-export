@@ -1,0 +1,20 @@
+it('[{{id}}]({{priority}}) {{{name}}}', function () {
+{{#pre_condition}}
+    /* PreConditions
+    {{{pre_condition}}}
+    */
+{{/pre_condition}}
+{{#steps}}
+    //{{step_index}} - {{input}} - {{expected_result}}
+{{/steps}}
+{{#validation_input}}
+    /* Validation Input
+    {{{validation_input}}}
+    */
+{{/validation_input}}
+{{#validation_expected_result}}
+    /* Validation Expected Result
+    {{{validation_expected_result}}}
+    */
+{{/validation_expected_result}}
+});
