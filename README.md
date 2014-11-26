@@ -40,6 +40,10 @@ If you need any other property from rally please add an issue or do a pull reque
 
 ## Changelog
 
+### v1.1.1
+
+- Fixing loading template file (Issue #4)
+
 ### v1.1.0
 
 #### Features
