@@ -2,12 +2,15 @@
 
 'use strict';
 
-var clipboard = require("copy-paste").global()
+var clipboard = require('copy-paste').global()
+var fs = require('fs');
+var hogan = require('hogan.js');
 
 var rally = require('../lib/rally-client');
 var exporter = require('../lib/protractor-exporter');
 var conf = require('../config/account.conf');
 
+var template = hogan.compile(fs.readFileSync("../config/output.mustache", 'utf8'));
 var tcRef = process.argv[2];
 var output = process.argv[3];
 
@@ -39,10 +42,10 @@ rally.readTestCase(tcRef)
     .then(rally.stepsResults)
     .then(function () {
         if (output === 'clipboard') {
-            clipboard.copy(exporter.getTestCase());
+            clipboard.copy(exporter.getTestCase(template));
         }
         else if (output === 'console') {
-            console.log(exporter.getTestCase());
+            console.log(exporter.getTestCase(template));
         }
         else {
             console.log('Unknown output');
