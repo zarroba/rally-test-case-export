@@ -40,7 +40,7 @@ If you need any other property from rally please add an issue or do a pull reque
 
 ## Changelog
 
-### v1.1.1
+### v1.1.2
 
 - Fixing loading template file (Issue #4)
 
