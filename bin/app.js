@@ -5,12 +5,14 @@
 var clipboard = require('copy-paste').global()
 var fs = require('fs');
 var hogan = require('hogan.js');
+var path = require('path');
 
 var rally = require('../lib/rally-client');
 var exporter = require('../lib/protractor-exporter');
 var conf = require('../config/account.conf');
+var templateFile = path.join(__dirname, '../config/output.mustache');
 
-var template = hogan.compile(fs.readFileSync("../config/output.mustache", 'utf8'));
+var template = hogan.compile(fs.readFileSync(templateFile, 'utf8'));
 var tcRef = process.argv[2];
 var output = process.argv[3];
 
@@ -33,7 +35,6 @@ else if (process.argv[0] === 'rally-tc-export') {
     tcRef = process.argv[1];
     output = process.argv[2];
 }
-
 
 rally.init(conf.login, conf.password, exporter);
 
