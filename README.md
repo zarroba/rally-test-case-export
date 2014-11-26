@@ -36,6 +36,8 @@ You have access to the following variables in your template:
         - input
         - expected_result
 
+If you need any other property from rally please add an issue or do a pull requesttuds
+
 ## Changelog
 
 ### v1.1.0
