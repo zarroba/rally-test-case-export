@@ -40,7 +40,7 @@ If you need any other property from rally please add an issue or do a pull reque
 
 ## Changelog
 
-### v1.2.1
+### v1.2.2
  - Add "Objective" parameter and improve text legibility
  - Improve text legibility of some parameters. Convert HTML to plain-text using "html-to-text" dependency
 
