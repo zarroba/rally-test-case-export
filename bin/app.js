@@ -38,6 +38,14 @@ else if (process.argv[0] === 'rally-tc-export') {
 
 rally.init(conf.login, conf.password, exporter);
 
+/*
+rally.getInitiative("33076243922")
+    .then(rally.readInitiative)
+    .then(rally.readFeatures)
+    //.then(rally.readUserStories)
+    .fail(rally.onError);
+*/
+
 rally.readTestCase(tcRef)
     .then(rally.readSteps)
     .then(rally.stepsResults)
@@ -53,6 +61,5 @@ rally.readTestCase(tcRef)
         }
     })
     .fail(rally.onError);
-
 
 
