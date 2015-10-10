@@ -28,7 +28,9 @@ You have access to the following variables in your template:
     - id
     - priority
     - name
+    - objective
     - pre_condition
+    - post_condition
     - validation_input
     - validation_expected_result
     - steps
@@ -36,7 +38,7 @@ You have access to the following variables in your template:
         - input
         - expected_result
 
-If you need any other property from rally please add an issue or do a pull requesttuds
+If you need any other property from rally please add an issue or do a pull request
 
 ## Changelog
 
