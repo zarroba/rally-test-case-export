@@ -8,5 +8,5 @@ module.exports = {
     //Your rally password
     password: 'your_pass',
     //Your api key (https://help.rallydev.com/rally-application-manager)
-    apiKey: 'youy_api_key'
+    apiKey: 'your_api_key'
 }
