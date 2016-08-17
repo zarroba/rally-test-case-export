@@ -13,6 +13,7 @@ Just install it globally with npm:
 ## Usage
 
 First you have to create an account.conf.js file with your account details. Just check the directory where npm installed rally-test-case-export (`/usr/local/lib/node_modules/rally-test-case-export/`, probably) go to the conf dir, copy `account.conf.reference.js` and set up your rally account.
+You can use username and password or api key (to create an api key see: https://help.rallydev.com/rally-application-manager).
 
 You just have to run `rally-tc-export <testcaseid> [console|clipboard]`
 

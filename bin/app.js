@@ -36,7 +36,7 @@ else if (process.argv[0] === 'rally-tc-export') {
     output = process.argv[2];
 }
 
-rally.init(conf.login, conf.password, exporter);
+rally.init(conf.login, conf.password, conf.apiKey, exporter);
 
 /*
 rally.getInitiative("33076243922")
@@ -61,5 +61,3 @@ rally.readTestCase(tcRef)
         }
     })
     .fail(rally.onError);
-
-
